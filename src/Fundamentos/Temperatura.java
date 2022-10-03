@@ -1,0 +1,18 @@
+package Fundamentos;
+
+public class Temperatura {
+    public static void main(String[] args) {
+        // (ºF - 32) x 5/9 = ºC
+
+        final double ajuste = 32;
+        final double fator = 5/9.0;
+
+        double fahrenheit = 86;
+        double celsius = (fahrenheit - ajuste)  * fator;
+        System.out.println("Temperatura: " + celsius + "ºC");
+
+        fahrenheit = 0;
+        celsius = (fahrenheit - ajuste)  * fator;
+        System.out.println("Temperatura: " + celsius + "ºC");
+    }
+}
